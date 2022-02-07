@@ -8,13 +8,13 @@
 
 menu:
   前端小案例||fab fa-html5:
-    B站头图: /case/bilibili-winter-banner || fas fa-tv
-    小米LOGO: /case/mi || fas fa-code
-    iPhone13Pro: /case/iphone-13-pro || fas fa-mobile-alt
-    月饼: /case/moon-cake || fas fa-hockey-puck
+    B站头图: /case/bilibili-winter-banner/ || fas fa-tv
+    小米LOGO: /case/mi/ || fas fa-code
+    iPhone13Pro: /case/iphone-13-pro/ || fas fa-mobile-alt
+    月饼: /case/moon-cake/ || fas fa-hockey-puck
   jz||fas fa-school:
-    H5作业: /jz/code/homework || fas fa-code
-    实训作业: /jz/code/shxun || fas fa-code
+    H5作业: /jz/code/homework/ || fas fa-code
+    实训作业: /jz/code/shixun/ || fas fa-code
   主页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
