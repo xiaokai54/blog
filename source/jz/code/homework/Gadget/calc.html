@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>计算器V0.1.0</title>
+	<style>
+		.banner {
+			width: 100%;
+			height: 800px;
+			padding-top: 100px;
+			background: url(../img/architecture-768432.jpg) no-repeat fixed center top;
+			background-size: cover;
+		}
+
+		.location {
+			width: 1000px;
+			height: 650px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+	<link rel="stylesheet" href="../css/calc.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+	<div class="header">
+		<ul class="navLeft">
+			<li><a href="http://www.jnzyjsxy.cn" target="_blank"><img src="../img/myPhoto.jpg"></a></li>
+		</ul>
+		<ul class="navMain">
+			<li><a href="../index.html">主页</a></li>
+			<li><a href="../Course/index.html">教程</a></li>
+			<li><a href="https://xkblog.vercel.app/" target="_blank">myblog</a></li>
+			<li><a href="#">友链</a>
+				<dl class="msub">
+					<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></dd>
+					<dd><a href="https://www.w3school.com.cn" target="_blank">W3school</a></dd>
+					<dd><a href="https://www.csdn.net" target="_blank">CSDN</a></dd>
+					<dd><a href="https://leetcode-cn.com" target="_blank">力扣</a></dd>
+					<dd><a href="https://cssbattle.dev" target="_blank">CSS Battle(外网)</a></dd>
+				</dl>
+			</li>
+			<li><a href="#">工具</a>
+				<dl class="msub">
+					<dd><a href="https://webgradients.com" target="_blank">webgradients</a></dd>
+					<dd><a href="calc.html">计算器</a></dd>
+					<dd><a href="https://oschina.gitee.io/learn-git-branching" target="_blank">Git 命令学习</a></dd>
+					<dd><a href="https://cstimer.net" target="_blank">魔方计时器</a></dd>
+					<dd><a href="https://pixabay.com/zh/" target="_blank">pixabay</a></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="navRight">
+			<li><a href="../login/login.html"><span id="username">登录</span></a></li>
+			<li class="right"><a href="../login/sign-in.html">注册</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		<div class="location">
+			<div class="web">
+				<span class="close" id="close" onclick="com(0)"></span>
+				<span class="min" id="min"></span>
+				<span class="open" id="open" onclick="com(1)"></span>
+				<div class="tips_1">
+					<p><strong>使用教程</strong></p>
+					<p>计算器默认<strong>关闭</strong></p>
+					<p>点击上方<font style="color: red;"><strong>红色</strong></font>按钮关闭计算器</p>
+					<p>点击上方<font style="color: green;"><strong>绿色</strong></font>按钮开启计算器</p>
+				</div>
+				<div class="tips_2">
+					<p>注意事项</p>
+					<p>在使用过程中要正常操作</p>
+					<p>如需要连续计算，则先按等号出结果，再按运算符</p>
+					<p>点击箭头切换至程序员计算器(暂未实现)</p><br>
+					<p>未完成</p>
+					<ul>
+						<li>高级计算器</li>
+						<li>计算过程中修改计算优先级</li>
+						<li>程序员计算器</li>
+					</ul>
+				</div>
+				<div class="thanks">
+					<p>算法思路来自:&nbsp;&nbsp;
+						<a href="https://blog.csdn.net/lwangji/article/details/107219072"
+							target="_blank">JavaScript简易网页计算器</a>&nbsp;&nbsp;&nbsp;
+						<a href="https://blog.csdn.net/weixin_44668898/article/details/96207910"
+							target="_blank">Web网页版简易计算器</a>
+					</p>
+				</div>
+				<div class="main">
+					<table class="sub">
+						<tr>
+							<td colspan="4" class="top">
+								<span class="stop">=====&nbsp;&nbsp;&nbsp;<span id="time"
+										class="time"></span>&nbsp;&nbsp;&nbsp;=====</span><br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<input type="text" value="" id="text" class="text" disabled style="color: #000;">
+							</td>
+						</tr>
+						<tr class="sub_tr">
+							<td colspan="3">
+								<span class="small">by&nbsp;:&nbsp;xiaokai</span>
+							</td>
+							<td>
+								<span class="err" id="err"></span>
+								<span class="ok" id="ok"></span>
+							</td>
+						</tr>
+						<tr class="sub_tr">
+							<td><input type="button" value="AC" id="res" onclick="com(-1)"></td>
+							<td><input type="button" value="+/-" id="neg" onclick="input_text('+/-')"></td>
+							<td><input type="button" value="%" id="remainder" onclick="input_text('%')"></td>
+							<td><input type="button" value="←" onclick="back()"></td>
+						</tr>
+						<tr class="sub_tr">
+							<td><input type="button" value="7" id="seven" onclick="input_text('7')"></td>
+							<td><input type="button" value="8" id="eight" onclick="input_text('8')"></td>
+							<td><input type="button" value="9" id="nine" onclick="input_text('9')"></td>
+							<td><input type="button" value="÷" id="divide" onclick="input_text('÷')"></td>
+						</tr>
+						<tr class="sub_tr">
+							<td><input type="button" value="4" id="four" onclick="input_text('4')"></td>
+							<td><input type="button" value="5" id="five" onclick="input_text('5')"></td>
+							<td><input type="button" value="6" id="six" onclick="input_text('6')"></td>
+							<td><input type="button" value="x" id="ride" onclick="input_text('x')"></td>
+						</tr>
+						<tr class="sub_tr">
+							<td><input type="button" value="1" id="one" onclick="input_text('1')"></td>
+							<td><input type="button" value="2" id="two" onclick="input_text('2')"></td>
+							<td><input type="button" value="3" id="three" onclick="input_text('3')"></td>
+							<td><input type="button" value="-" id="minus" onclick="input_text('-')"></td>
+						</tr>
+						<tr class="sub_tr">
+							<td><input type="button" value="0" id="zero" onclick="input_text('0')"></td>
+							<td><input type="button" value="." id="dot" onclick="input_text('.')"></td>
+							<td><input type="button" value="=" id="wait" onclick="input_text('=')"></td>
+							<td><input type="button" value="+" id="plus" onclick="input_text('+')"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/calcSimple.js"></script>
+	<div class="footer">
+		<div class="Fcontent">
+			<div class="gitee">
+				<a href="https://gitee.com/xkaipro" target="_blank">Gitee</a>
+			</div>
+			<div class="github">
+				<a href="https://github.com/xkaipro" target="_blank">Github</a>
+			</div>
+			<div class="tomail">
+				<a href="mailto:xkaipro@foxmail.com">联系我</a>
+			</div>
+			<div class="about">
+				<a href="../about.html">关于我</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.querySelector('.banner').style.height = document.documentElement.clientHeight - 200 + 'px';
+		if (sessionStorage.getItem('nickname').length != 0) {
+			document.querySelector('.right').style.display = 'none';
+			document.getElementById('username').innerHTML = sessionStorage.getItem('Fnickname');
+		}
+	</script>
+</body>
+
+</html>

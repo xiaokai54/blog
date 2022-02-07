@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>中秋快乐</title>
+	<style>
+		:root {
+			--base-color: #db7e17;
+			--surface-color: #e98d1e;
+			--light-color: #fdd526;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 98vh;
+			flex-direction: column;
+			background-image: linear-gradient(110deg, rgba(73, 93, 109, 1) 0%, rgba(49, 55, 82, 1) 100%);
+		}
+
+		.cake {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			position: relative;
+			background-color: var(--base-color);
+		}
+
+		.edge {
+			background-color: var(--base-color);
+			width: 100px;
+			height: 300px;
+			position: absolute;
+			border-radius: 50px;
+			transform: translateX(-50%) scale(1.05);
+			left: 50%;
+			top: 0;
+			box-shadow: inset 0px 0px 18px rgba(0, 0, 0, .2);
+		}
+
+		.edge::before,
+		.edge::after {
+			content: '';
+			display: block;
+			background-color: inherit;
+			width: inherit;
+			height: inherit;
+			position: inherit;
+			border-radius: inherit;
+			left: inherit;
+			top: inherit;
+			box-shadow: inherit;
+		}
+
+		.edge::before {
+			transform: translateX(-50%) scale(1.03) rotateZ(-30deg);
+		}
+
+		.edge::after {
+			transform: translateX(-50%) scale(1.03) rotateZ(-60deg);
+		}
+
+		.edge:nth-child(2) {
+			transform: translateX(-50%) scale(1.05) rotateZ(90deg);
+		}
+
+		.bevel {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transform: scale(0.93);
+		}
+
+		.bevel .edge {
+			background-color: var(--light-color);
+			box-shadow: none;
+		}
+
+		.bevel .edge::before,
+		.bevel .edge::after {
+			box-shadow: none;
+		}
+
+		.inner {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transform: scale(0.88);
+		}
+
+		.inner .edge {
+			background-color: var(--surface-color);
+			box-shadow: none;
+		}
+
+		.inner .edge::before,
+		.inner .edge::after {
+			box-shadow: none;
+		}
+
+		.text {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) scale(0.9);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			border: 8px solid var(--light-color);
+			border-radius: 40px;
+
+			background-image: linear-gradient(315deg, rgba(211, 129, 18, 1) 0%, rgba(233, 141, 30, 1) 100%);
+		}
+
+		.text span {
+			font-size: 80px;
+			line-height: 80px;
+			width: 160px;
+			font-family: Helvetica;
+			font-weight: bold;
+			color: var(--light-color);
+		}
+
+		#from {
+			margin: 0;
+			position: absolute;
+			top: 90%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #aaa;
+			opacity: .7;
+		}
+		#from>a{
+			color: #aaa;
+			text-decoration: none;
+		}
+		#from>a:hover{
+			color: #eee;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="cake">
+		<div class="edge"></div>
+		<div class="edge"></div>
+		<div class="bevel">
+			<div class="edge"></div>
+			<div class="edge"></div>
+		</div>
+		<div class="inner">
+			<div class="edge"></div>
+			<div class="edge"></div>
+		</div>
+		<div class="text">
+			<span>中秋快乐</span>
+		</div>
+	</div>
+	<span id="from">来自&nbsp;<a href="https://codepen.io/stevenlei/pen/jOwxdaQ" target="_blank">CSS月饼</a></span>
+</body>
+
+</html>

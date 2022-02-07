@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Microsoft YaHei";
+    user-select: none;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+.header a {
+    color: #fff;
+}
+
+.navLeft {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    /* border: 1px solid; */
+}
+
+.navLeft li {
+    float: left;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navLeft li:nth-child(2) {
+    text-align: left;
+}
+
+.navLeft img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.navMain {
+    width: 1000px;
+    position: absolute;
+    top: 0;
+    left: 750px;
+    /* border: 1px solid red; */
+}
+
+.navMain li:hover {
+    transition: all .2s;
+    background-color: #fff;
+}
+
+.navMain li:hover>a {
+    color: #000;
+}
+
+
+.msub dd a {
+    font-size: 15px;
+}
+
+.msub dd:hover {
+    background-color: #fff;
+}
+
+.navMain li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.msub dd {
+    opacity: 0;
+    transition: all .2s;
+}
+
+.navMain li:hover>.msub dd {
+    background-color: #00000080;
+    opacity: 1;
+}
+
+.msub dd:nth-last-child(1) {
+    border-radius: 0 0 15px 15px;
+}
+
+.msub dd:hover>a {
+    text-decoration: underline;
+}
+
+.navRight {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.navRight li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+#username {
+    color: #fff;
+}

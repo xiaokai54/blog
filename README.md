@@ -1,2 +1,1 @@
-# blog
-blog
+[blog](https://xkblog.vercel.app)

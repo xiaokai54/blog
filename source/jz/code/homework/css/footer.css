@@ -1,0 +1,42 @@
+.footer {
+	width: 100%;
+	height: 100px;
+	background-color: #333;
+}
+
+.Fcontent {
+	width: 40%;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.Fcontent a {
+	color: #ccc;
+}
+
+.Fcontent a:hover {
+	color: #eee;
+}
+
+.about,
+.github,
+.gitee,
+.tomail {
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	font-size: 14px;
+}
+.tomail {
+	right: 100px;
+}
+.github {
+	right: 180px;
+}
+
+.gitee {
+	right: 260px;
+}

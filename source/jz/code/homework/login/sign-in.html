@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>login | 注册</title>
+</head>
+
+	<style type="text/css">
+		body,
+		div,
+		ul,
+		li,
+		dl,
+		dd,
+		a,
+		span {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+			color: #000;
+		}
+
+		.banner {
+			width: 100%;
+			background: url(../img/mountains-1985027.jpg) no-repeat fixed center top;
+			background-size: cover;
+		}
+
+		.login-box {
+			width: 600px;
+			height: 600px;
+			margin: 0 auto;
+			background-color: rgba(255, 255, 255, .1);
+			backdrop-filter: blur(2px);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -60%);
+			box-shadow: 2px 2px 5px #000, 1px 1px 5px #000;
+		}
+
+		.login {
+			position: relative;
+		}
+
+		h2 {
+			font-size: 50px;
+			text-align: center;
+			padding: 80px 0 20px 0;
+			font-family: 'Times New Roman';
+		}
+
+		.login input {
+			width: 60%;
+			height: 30px;
+			display: block;
+			margin: 30px auto;
+			background: none;
+			border: none;
+			border-bottom: 1px solid #3c3c3c;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		::-webkit-input-placeholder {
+			color: #fff;
+			font-size: 16px;
+			font-weight: normal;
+		}
+
+		.login a {
+			color: #3c3c3c;
+		}
+
+		#login {
+			width: 35%;
+			height: 50px;
+			background-image: linear-gradient(to top, #00c6fb50 0%, #005bea50 100%);
+			border: none;
+			border-radius: 50px;
+			font-size: 18px;
+			color: #fff;
+			box-shadow: 0 0 2px #000;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 500%);
+		}
+	</style>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	</head>
+
+	<body>
+		<div class="header">
+			<ul class="navLeft">
+				<li><a href="http://www.jnzyjsxy.cn" target="_blank"><img src="img/myPhoto.jpg"></a></li>
+			</ul>
+			<ul class="navMain">
+				<li><a href="../index.html">主页</a></li>
+				<li><a href="../Course/index.html">教程</a></li>
+				<li><a href="https://xkaipro.vercel.app" target="_blank">myblog</a></li>
+				<li><a href="#">友链</a>
+					<dl class="msub">
+						<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></dd>
+						<dd><a href="https://www.w3school.com.cn" target="_blank">W3school</a></dd>
+						<dd><a href="https://www.csdn.net" target="_blank">CSDN</a></dd>
+						<dd><a href="https://leetcode-cn.com" target="_blank">力扣</a></dd>
+						<dd><a href="https://cssbattle.dev" target="_blank">CSS Battle(外网)</a></dd>
+					</dl>
+				</li>
+				<li><a href="#">工具</a>
+					<dl class="msub">
+						<dd><a href="https://webgradients.com" target="_blank">webgradients</a></dd>
+						<dd><a href="../Gadget/calc.html">计算器</a></dd>
+						<dd><a href="https://oschina.gitee.io/learn-git-branching" target="_blank">Git 命令学习</a></dd>
+						<dd><a href="https://cstimer.net" target="_blank">魔方计时器</a></dd>
+						<dd><a href="https://pixabay.com/zh/" target="_blank">pixabay</a></dd>
+					</dl>
+				</li>
+			</ul>
+			<ul class="navRight">
+				<li><a href="login.html"><span id="username">登录</span></a></li>
+				<li class="right"><a href="sign-in.html">注册</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<div class="login-box">
+				<div class="login">
+					<h2>注 册</h2>
+					<input type="text" name="nickname" placeholder="昵称" id="nname">
+					<input type="text" name="username" placeholder="用户名" id="uname">
+					<input type="password" name="passwd" placeholder="密码(6-18位)" id="passwd">
+					<input type="email" name="email" placeholder="邮箱" id="email">
+					<input type="submit" value="注册" id="login">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="Fcontent">
+				<div class="gitee">
+					<a href="https://gitee.com/xkaipro" target="_blank">Gitee</a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/xkaipro" target="_blank">Github</a>
+				</div>
+				<div class="tomail">
+					<a href="mailto:xkaipro@foxmail.com">联系我</a>
+				</div>
+				<div class="about">
+					<a href="../about.html">关于我</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			document.querySelector('.banner').style.height = document.documentElement.clientHeight - 100 + 'px';
+
+			var username = document.getElementById('uname');
+			var nickname = document.getElementById('nname');
+			var passwd = document.getElementById('passwd');
+			var mail = document.getElementById('email');
+			var btn = document.getElementById('login');
+
+			btn.addEventListener("click", function () {
+				sessionStorage.setItem('username', username.value);
+				sessionStorage.setItem('nickname', nickname.value);
+				sessionStorage.setItem('password', passwd.value);
+				sessionStorage.setItem('email', mail.value);
+				if (username.value.length == 0 || nickname.value.length == 0 || passwd.value.length == 0 || mail
+					.value
+					.length == 0) {
+					alert('请先输入信息');
+				} else {
+					if (passwd.value.length < 6 || passwd.value.length > 18) {
+						alert('密码长度不合法');
+					} else if (mail.value.indexOf('@') == -1) {
+						alert('请输入合法邮箱地址')
+					} else {
+						alert('注册成功！');
+						location.href = "login.html";
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

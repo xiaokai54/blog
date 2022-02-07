@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>小凯的窝 | 主页</title>
+	<style type="text/css">
+		body,
+		div,
+		ul,
+		li,
+		dl,
+		dd,
+		a,
+		span {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+
+		.navMain li:nth-child(1) {
+			height: 48px;
+			border-top: 2px solid #fff;
+		}
+
+		.banner {
+			width: 100%;
+			background: url(img/mountains-1645078.jpg) no-repeat fixed center top, linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+			background-size: cover;
+		}
+
+		.clock {
+			background-color: rgba(0, 0, 0, .6);
+			border-radius: 100px;
+			width: 1100px;
+			height: 400px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			box-shadow: 0 0 10px #000000;
+		}
+
+		#hour,
+		#minute,
+		#second {
+			border-radius: 20px;
+			margin: 50px 4px 0 4px;
+			display: inline-block;
+			width: 300px;
+			height: 300px;
+			background-color: #33333390;
+			font-size: 150px;
+			color: #fff;
+			text-align: center;
+			line-height: 300px;
+			box-shadow: 0 0 10px #000000;
+		}
+
+		#hour {
+			margin-left: 50px;
+		}
+
+		.clock span {
+			font-size: 150px;
+			color: #fff;
+		}
+	</style>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+	<div class="header">
+		<ul class="navLeft">
+			<li><a href="http://www.jnzyjsxy.cn" target="_blank"><img src="img/myPhoto.jpg"></a></li>
+		</ul>
+		<ul class="navMain">
+			<li><a href="index.html">主页</a></li>
+			<li><a href="Course/index.html">教程</a></li>
+			<li><a href="https://xkblog.vercel.app/" target="_blank">myblog</a></li>
+			<li><a href="#">友链</a>
+				<dl class="msub">
+					<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></dd>
+					<dd><a href="https://www.w3school.com.cn" target="_blank">W3school</a></dd>
+					<dd><a href="https://www.csdn.net" target="_blank">CSDN</a></dd>
+					<dd><a href="https://leetcode-cn.com" target="_blank">力扣</a></dd>
+					<dd><a href="https://cssbattle.dev" target="_blank">CSS Battle(外网)</a></dd>
+				</dl>
+			</li>
+			<li><a href="#">工具</a>
+				<dl class="msub">
+					<dd><a href="https://webgradients.com" target="_blank">webgradients</a></dd>
+					<dd><a href="Gadget/calc.html">计算器</a></dd>
+					<dd><a href="https://oschina.gitee.io/learn-git-branching" target="_blank">Git 命令学习</a></dd>
+					<dd><a href="https://cstimer.net" target="_blank">魔方计时器</a></dd>
+					<dd><a href="https://pixabay.com/zh/" target="_blank">pixabay</a></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="navRight">
+			<li><a href="login/login.html"><span id="username">登录</span></a></li>
+			<li class="right"><a href="login/sign-in.html">注册</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		<div class="clock">
+			<span id="hour"></span>
+			<span>:</span>
+			<span id="minute"></span>
+			<span>:</span>
+			<span id="second"></span>
+		</div>
+		<div class="Bcontent">
+			<p>这是一个</p>
+		</div>
+	</div>
+	<script>
+		var nHour = document.getElementById('hour');
+		var nMinute = document.getElementById('minute');
+		var nSecond = document.getElementById('second');
+
+		clock();
+		setInterval("clock()", 1000);
+
+		function clock() {
+			var time = new Date();
+			var hour = time.getHours();
+			hour = hour < 10 ? '0' + hour : hour;
+			var minute = time.getMinutes();
+			minute = minute < 10 ? '0' + minute : minute;
+			var second = time.getSeconds();
+			second = second < 10 ? '0' + second : second;
+			nHour.innerHTML = hour;
+			nMinute.innerHTML = minute;
+			nSecond.innerHTML = second;
+		}
+	</script>
+	<div class="footer">
+		<div class="Fcontent">
+			<div class="gitee">
+				<a href="https://gitee.com/xkaipro" target="_blank">Gitee</a>
+			</div>
+			<div class="github">
+				<a href="https://github.com/xkaipro" target="_blank">Github</a>
+			</div>
+			<div class="tomail">
+				<a href="mailto:xkaipro@foxmail.com">联系我</a>
+			</div>
+			<div class="about">
+				<a href="about.html">关于我</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.querySelector('.banner').style.height = document.documentElement.clientHeight - 100 + 'px';
+		if (sessionStorage.getItem('nickname').length != 0) {
+			document.querySelector('.right').style.display = 'none';
+			document.getElementById('username').innerHTML = sessionStorage.getItem('Fnickname');
+		}
+	</script>
+</body>
+
+</html>

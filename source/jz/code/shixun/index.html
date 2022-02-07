@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/noScroll.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+	<!-- indextop start -->
+	<div class="container indextop">
+		<h4>中国移动互联网教育品牌</h4>
+		<ul class="nav nav-pills pull-right">
+			<li><a href="#">火星人网校</a></li>
+			<li><a href="about.html">联系我们</a></li>
+			<li><a href="#">加入收藏</a></li>
+			<li><a href="#"><img src="img/qq.png" alt=""></a></li>
+			<li><a href="#"><img src="img/wechat.png" alt=""></a></li>
+			<li><a href="#"><img src="img/weibo.png" alt=""></a></li>
+			<li>400-025-8883</li>
+		</ul>
+	</div>
+	<!-- indextop end -->
+
+	<!-- nav start -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#navbarcillapsel">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="infomation.html" class="navbar-brand" style="margin: 0;padding: 0;">
+					<img src="img/news_logo.png" alt="" style="height: 50px;width: auto;">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarcollapsel">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">首页</a></li>
+					<li><a href="about.html">团队</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">课程系统 <span class="caret"
+								style="margin-left: 2px;"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">web前端</a></li>
+							<li><a href="#">室内设计</a></li>
+							<li><a href="#">室外设计</a></li>
+							<li class="divider"></li>
+							<li><a href="#">工业设计</a></li>
+							<li class="divider"></li>
+							<li><a href="#">平面设计</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form role="search" action="" class="navbar-form navbar-left">
+					<div class="input-group">
+						<input type="text" name="" class="form-control" placeholder="找课程">
+						<div class="input-group-btn">
+							<button type="submit" class="btn btn-primary">提交</button>
+						</div>
+					</div>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html" id="login">登录</a></li>
+					<li><a href="login.html" id="register">注册</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">关注我们 <span class="caret"
+								style="margin-left: 2px;"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#" id="yonganli" data-toggle="popver" data-placement="auto left"
+									data-trigger="hover" title="联系电话" data-content="张老师：12345678965">永安里校区</a></li>
+							<li><a href="#">国贸校区</a></li>
+							<li><a href="#">中关村校区</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- nav end -->
+
+	<!-- round start -->
+	<div id="myCarousel" class="carousel slide" style="margin-bottom: 20px; margin-top: 0;">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active" style="background: #223240;">
+				<img src="img/Slides-1.jpg" alt="第一张">
+			</div>
+			<div class="item" style="background: #223240;">
+				<img src="img/Slides-4.jpg" alt="第二张">
+			</div>
+			<div class="item" style="background: #223240;">
+				<img src="img/Slides-6.jpg" alt="第三张">
+			</div>
+		</div>
+		<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#myCarousel" data-slide="next" class="carousel-control right">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+	<!-- round end -->
+
+	<!-- youshi start -->
+	<div class="youshi" style="margin-bottom: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div><a href="#"><img src="img/introduceContainer1.gif" alt=""></a></div>
+					<div><span>丰富全面的计算机实验课程</span></div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div><a href="#"><img src="img/introduceContainer2.gif" alt=""></a></div>
+					<div><span>在线编程环境，1秒启动</span></div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div><a href="#"><img src="img/introduceContainer3.gif" alt=""></a></div>
+					<div><span>每天一个项目课，丰富你的项目经验</span></div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div><a href="#"><img src="img/introduceContainer4.gif" alt=""></a></div>
+					<div><span>有效需东西时间，真实记录记得代码生涯</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- youshi end -->
+
+	<!-- class-list start -->
+	<div class="container" id="kecheng">
+		<div class="text-center item-header" style="margin-bottom: 20px;">
+			<span></span>
+			<span class="text-center">学习路径</span>
+			<span></span>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="#">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513730333.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="#">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513769430.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513793360.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513817808.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513867033.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513926288.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471514004752.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471514058548.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471514111981.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471514153000.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471514111981.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<a href="###">
+					<div class="col-xs-5 col-sm-4">
+						<img src="img/1471513793360.png">
+					</div>
+					<div class="col-xs-7 col-sm-8" style="padding-top: 20px;">
+						<div class="text-center text-muted">C++ 研发工程师</div>
+						<div class="text-center text-muted">22门课程</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- class-list end -->
+
+	<!-- jiuye start -->
+	<div id="tuijian" class="container">
+		<div class="text-center item-header" style="margin-bottom: 20px;">
+			<span></span>
+			<span class="text-center">就业热门</span>
+			<span></span>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="img/20161213092244776.jpg" alt="">
+				</div>
+				<div>
+					<h4>就业页面课程1</h4>
+				</div>
+				<div>
+					<p>说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="img/20161213092244776.jpg" alt="">
+				</div>
+				<div>
+					<h4>就业页面课程1</h4>
+				</div>
+				<div>
+					<p>说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="img/20161213092244776.jpg" alt="">
+				</div>
+				<div>
+					<h4>就业页面课程1</h4>
+				</div>
+				<div>
+					<p>说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="img/20161213092244776.jpg" alt="">
+				</div>
+				<div>
+					<h4>就业页面课程1</h4>
+				</div>
+				<div>
+					<p>说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jiuye end -->
+
+	<!-- study start -->
+	<div class="tab2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 tab2-img">
+					<img src="img/tab2.png" alt="" class="auto img-responsive center-block">
+				</div>
+				<div class="text col-md-6 col-sm-6 tab2-text">
+					<h3>强大的学习体系</h3>
+					<p>经过管理学大师层层把关，让您的企业突飞猛进</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- study end -->
+
+	<!-- guanli start -->
+	<div class="tab3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<img src="img/tab3.png" alt="" class="auto img-responsive center-block">
+				</div>
+				<div class="text col-md-6 col-sm-6">
+					<h3>完美的管理方式</h3>
+					<p>最新的管理培训方案，让您的企业赶超同行。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- guanli end -->
+
+	<!-- footer start -->
+	<footer id="footer">
+		<div class="container">
+			<p>企业培训 | <a href="case.html">合作事宜</a> | 版权投诉</p>
+			<p>京ICP 备12345678. &copy; 2009-2016 火星人培训网. Powered by Bootstarp</p>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<script>
+		$("#yonganli").popover();
+	</script>
+</body>
+
+</html>

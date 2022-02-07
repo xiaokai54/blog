@@ -1,0 +1,11 @@
+body::-webkit-scrollbar {
+	display: none;
+	/* Chrome Safari */
+}
+
+body{
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

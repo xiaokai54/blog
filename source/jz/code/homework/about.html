@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>小凯的窝 | 不怎么好的自我介绍</title>
+	<style type="text/css">
+		body,
+		div,
+		ul,
+		li,
+		dl,
+		dd,
+		a,
+		span,
+		img,
+		video {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+
+		body {
+			background-color: #000;
+		}
+
+		.banner {
+			/* margin-top: 50px; */
+			width: 100%;
+			height: 9900px;
+			background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+		}
+
+		.top {
+			position: fixed;
+			right: 20px;
+			bottom: 100px;
+		}
+
+		.top img {
+			width: 50px;
+		}
+
+		.top:hover::before {
+			height: 50px;
+			content: "返回顶部";
+			line-height: 50px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/aboutme.css">
+
+</head>
+
+<body>
+	<div class="header">
+		<ul class="navLeft">
+			<li style="line-height: 45px;"><a href="http://www.jnzyjsxy.cn" target="_blank"><img
+						src="img/myPhoto.jpg"></a></li>
+		</ul>
+		<ul class="navMain">
+			<li><a href="index.html">主页</a></li>
+			<li><a href="Course/index.html">教程</a></li>
+			<li><a href="https://xkblog.vercel.app/" target="_blank">myblog</a></li>
+			<li><a href="#">友链</a>
+				<dl class="msub">
+					<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></dd>
+					<dd><a href="https://www.w3school.com.cn" target="_blank">W3school</a></dd>
+					<dd><a href="https://www.csdn.net" target="_blank">CSDN</a></dd>
+					<dd><a href="https://leetcode-cn.com" target="_blank">力扣</a></dd>
+					<dd><a href="https://cssbattle.dev" target="_blank">CSS Battle(外网)</a></dd>
+				</dl>
+			</li>
+			<li><a href="#">工具</a>
+				<dl class="msub">
+					<dd><a href="https://webgradients.com" target="_blank">webgradients</a></dd>
+					<dd><a href="Gadget/calc.html">计算器</a></dd>
+					<dd><a href="https://oschina.gitee.io/learn-git-branching" target="_blank">Git 命令学习</a></dd>
+					<dd><a href="https://cstimer.net" target="_blank">魔方计时器</a></dd>
+					<dd><a href="https://pixabay.com/zh/" target="_blank">pixabay</a></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="navRight">
+			<li><a href="login/login.html"><span id="username">登录</span></a></li>
+			<li class="right"><a href="login/sign-in.html">注册</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		<div class="am">
+			<div class="self-introduction">
+				<table>
+					<tr>
+						<td>姓名&nbsp;:&nbsp;高晨凯</td>
+						<td>性别&nbsp;:&nbsp;男</td>
+					</tr>
+					<tr>
+						<td>学号&nbsp;:&nbsp;20XXXXXXXX97</td>
+						<td>班级&nbsp;:&nbsp;18五年制计应三班</td>
+					</tr>
+					<tr>
+						<td>Tel&nbsp;:&nbsp;156XXXX3605</td>
+						<td>Emali&nbsp;:&nbsp;<a href="mailto:morningkai@qq.com">Morningkai@qq.com</a></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding-top: 30px;text-align: center;line-height: 40px;" class="end">
+							<p>济职电子系学生，热爱计算机，平日里喜欢去研究这些这些东西</p>
+							<p>平常喜欢看看电影，有IMAX大片一定不错过</p>
+							<p>在家闲的时候还会剪剪视频，做做特效，丰富自己的课余生活</p>
+						</td>
+					</tr>
+				</table>
+				<div class="self-introduction-personal-photo">
+					<img src="" title="太社死了">
+				</div>
+				<div class="more">
+					<img src="img/bottom.png" alt="" height="16">
+				</div>
+			</div>
+			<div class="hobby" id="hobby">
+				<div class="hobby-vfx-e3d" id="hobby-vfx">
+					<video id="video" autoplay loop height="500px" preload="none">
+						<source id="hobby-video" src="video/e3d-mini.mp4">
+					</video>
+				</div>
+				<div class="hobby-list">
+					<ul class="obby-list-sub">
+						<!-- <li>计算机</li>
+						<li>数据通信</li>
+						<li>剪视频</li>
+						<li>做特效</li>
+						<li>玩魔方</li> -->
+						<li>暂无</li>
+					</ul>
+				</div>
+				<!-- <button class="hobby-next">点击切换</button> -->
+			</div>
+			<div class="xmtgzs">
+				<div class="xmtgzs-title">
+					<p>我和新媒体</p>
+					<p>虽已分别</p>
+					<p>那段时光蛮值得回忆</p>
+					<p>……</p>
+				</div>
+				<div class="xmtgzs-gif" id="xmtgzs-gif"></div>
+				<div class="xmtgzs-wechat-official-account">
+					<ul class="xmtgzs-wechat-official-account-sub">
+						<li>曾留下过的部分痕迹</li>
+						<li>现在想想，满满的都是回忆</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/xMYQj0WS1tgysOkgZ9so0g" target="_blank">LOVE济职 |
+								济职Vlog正式上线！一分钟，带你领略济职充实的一天~</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/PllLaD90HaLG9rM43VIjMw" target="_blank">济职朗读者 |
+								王明霞：《青春心向党，奋斗显光芒》</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/sL4T2_f8Q-64CdMx2eG_XA" target="_blank">济职朗读者 |
+								郇文悦：《忆往昔，峥嵘岁月》</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/c2JOovQu7pMABTtsk-T37w" target="_blank">济职朗读者 | 植树节特辑
+								孙思晴：《改善生态环境，谱写生态乐章》</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/d-OfXh26sm4jYSYB2-aoDA" target="_blank">济职朗读者 |
+								春节特辑！刘英姿：《从此刻，向未来》</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/SJBE_dJ0eVmkWhTbOVMEOw" target="_blank">济职朗读者 |
+								听济职学子朗读《习近平与大学生朋友们》第四篇</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/2h9C_s2yvk7VFCbqJyqWPA" target="_blank">济职朗读者 |
+								听济职学子朗读《习近平与大学生朋友们》第二篇</a>
+						</li>
+						<li>
+							<a href="https://mp.weixin.qq.com/s/ie7PKtqiL-gfwuDRmwNASQ" target="_blank">济职朗读者 |
+								听济职学子朗读《习近平与大学生朋友们》第一篇</a>
+						</li>
+						<li>
+							<div class="xmtgzs-self-introduction">
+								<p>2020.10.27-2021.05.27</p>
+								<p>The End</p>
+							</div>
+						</li>
+						<li>
+							<div class="xmtgzs-wechat-official-account-photo">
+								<ul class="xmtgzs-wechat-official-account-photo-sub">
+									<li>
+										<a href="https://mp.weixin.qq.com/s/xMYQj0WS1tgysOkgZ9so0g" target="_blank">
+											<img src="img/wechat-official-account/08.jpg" data-src="img/wechat-official-account/08.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/PllLaD90HaLG9rM43VIjMw" target="_blank">
+											<img src="img/wechat-official-account/07.jpg" data-src="img/wechat-official-account/07.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/sL4T2_f8Q-64CdMx2eG_XA" target="_blank">
+											<img src="img/wechat-official-account/06.jpg" data-src="img/wechat-official-account/06.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/c2JOovQu7pMABTtsk-T37w" target="_blank">
+											<img src="img/wechat-official-account/05.jpg" data-src="img/wechat-official-account/05.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/d-OfXh26sm4jYSYB2-aoDA" target="_blank">
+											<img src="img/wechat-official-account/04.jpg" data-src="img/wechat-official-account/04.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/SJBE_dJ0eVmkWhTbOVMEOw" target="_blank">
+											<img src="img/wechat-official-account/03.jpg" data-src="img/wechat-official-account/03.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/2h9C_s2yvk7VFCbqJyqWPA" target="_blank">
+											<img src="img/wechat-official-account/02.jpg" data-src="img/wechat-official-account/02.jpg.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://mp.weixin.qq.com/s/ie7PKtqiL-gfwuDRmwNASQ" target="_blank">
+											<img src="img/wechat-official-account/01.jpg" data-src="img/wechat-official-account/01.jpg">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ability">
+				<div class="ability-list">
+					<ul>
+						<li><a href="https://xkblog.vercel.app/categories/%E5%8D%8E%E4%B8%BAIP%E6%95%B0%E9%80%9A%E5%9F%BA%E7%A1%80/"
+								target="_blank">Datacom数据通信</a></li>
+						<li><a href="#xmtgzs-gif">gif图</a></li>
+						<li><a href="#hobby-vfx">vfx视觉效果</a></li>
+						<li><a href="index.html">HTML</a></li>
+					</ul>
+				</div>
+				<div class="ability-ncre">
+					<img src="img/NCRE.png" title="来自NCRE官网截图">
+				</div>
+			</div>
+			<div class="future" id="fiexd">
+				<ul class="future-sub">
+					<li>About Future</li>
+					<li>未来可以开开心心的，少点压力多点开心</li>
+					<li>可以早点考出来<a href="https://baike.baidu.com/item/HCIE" target="_blank">HCIE</a></li>
+					<li>做一次公益</li>
+					<li>……</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="top"><a href="#top"><img src="img/top.png"></a></div>
+	<div class="footer">
+		<div class="Fcontent">
+			<div class="gitee">
+				<a href="https://gitee.com/xkaipro" target="_blank">Gitee</a>
+			</div>
+			<div class="github">
+				<a href="https://github.com/xkaipro" target="_blank">Github</a>
+			</div>
+			<div class="tomail">
+				<a href="mailto:xkpro@foxmail.com">联系我</a>
+			</div>
+			<div class="about">
+				<a href="about.html">关于我</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.querySelector('.self-introduction').style.marginBottom = document.documentElement.clientHeight - 440 +
+			'px';
+		// 加载本地用户名
+		if (sessionStorage.getItem('nickname').length != 0) {
+			document.querySelector('.right').style.display = 'none';
+			document.getElementById('username').innerHTML = sessionStorage.getItem('Fnickname');
+		}
+	</script>
+</body>
+
+</html>

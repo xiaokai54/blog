@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>教程 | 来自BilBili</title>
+	<style>
+		body,
+		div,
+		ul,
+		li,
+		img,
+		a,
+		dl,
+		dd,
+		span {
+			margin: 0;
+			padding: 0;
+			color: #000;
+		}
+
+		.navMain li:nth-child(2) {
+			height: 48px;
+			border-top: 2px solid #fff;
+		}
+
+		.banner {
+			width: 100%;
+			font-size: 12px;
+			background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+		}
+
+		.banner-max-box {
+			width: 1220px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -55%);
+
+		}
+
+		.banner-box-header-sub {
+			height: 40px;
+			margin: 10px 0 80px 10px;
+		}
+
+		.banner-box-header-sub li {
+			width: 100px;
+			background-color: rgba(237, 242, 251, .5);
+			border-radius: 10px;
+			box-shadow: 0 0 2px #3c3c3c;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			float: left;
+			margin: 5px 10px;
+
+		}
+
+		.banner-box-video {
+			margin: 10px;
+			float: left;
+			width: 850px;
+		}
+
+		.look {
+			background-color: rgba(255, 255, 255, .5);
+			width: 100%;
+			height: 550px;
+			box-shadow: 0 0 2px #000, 0 0 4px #000;
+			border-radius: 5px;
+		}
+
+		.banner-box-video-list {
+			height: 500px;
+		}
+
+		.banner-box-video-list img {
+			height: 120px;
+			border-radius: 5px;
+		}
+
+		.banner-box-video-list li {
+			display: block;
+			padding: 10px;
+			float: left;
+			width: 190px;
+		}
+
+		.cover {
+			display: block;
+			width: 190px;
+			height: 120px;
+			position: relative;
+			background: url(../img/cover/video-placeholder.png) no-repeat center;
+			background-size: cover;
+			border-radius: 5px;
+		}
+
+		.cover span {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, .5);
+			border-radius: 5px 0 5px 0;
+			color: #fff;
+			padding: 0 5px;
+			line-height: 20px;
+		}
+
+		.banner-box-video-list .video-name {
+			margin-top: 5px;
+			display: block;
+			padding: 0 5px;
+			color: #000;
+		}
+
+		.banner-box-list {
+			height: 550px;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translate(0, -38.2%);
+			width: 335px;
+			font-size: 18px;
+			font-weight: bold;
+			border-radius: 5px;
+			background-color: rgba(255, 255, 255, .5);
+			box-shadow: 0 0 2px #000, 0 0 4px #000;
+			border-radius: 5px;
+		}
+
+		.banner-box-list ul li {
+			height: 50px;
+			line-height: 50px;
+			padding: 20px;
+		}
+
+		.banner-box-list ul li:nth-child(1) {
+			margin-top: 40px;
+		}
+
+		.banner-box-list ul li:nth-last-child(1) {
+			text-align: center;
+			line-height: normal;
+			font-size: 14px;
+			color: #ccc;
+		}
+	</style>
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="header">
+			<ul class="navLeft">
+				<li><a href="http://www.jnzyjsxy.cn" target="_blank"><img src="../img/myPhoto.jpg"></a></li>
+			</ul>
+			<ul class="navMain">
+				<li><a href="../index.html">主页</a></li>
+				<li><a href="index.html">教程</a></li>
+				<li><a href="https://xiaokai54.github.io/" target="_blank">myblog</a></li>
+				<li><a href="#">友链</a>
+					<dl class="msub">
+						<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></dd>
+						<dd><a href="https://www.w3school.com.cn" target="_blank">W3school</a></dd>
+						<dd><a href="https://www.csdn.net" target="_blank">CSDN</a></dd>
+						<dd><a href="https://leetcode-cn.com" target="_blank">力扣</a></dd>
+						<dd><a href="https://cssbattle.dev" target="_blank">CSS Battle(外网)</a></dd>
+					</dl>
+				</li>
+				<li><a href="#">工具</a>
+					<dl class="msub">
+						<dd><a href="https://webgradients.com" target="_blank">webgradients</a></dd>
+						<dd><a href="../Gadget/calc.html">计算器</a></dd>
+						<dd><a href="https://oschina.gitee.io/learn-git-branching" target="_blank">Git 命令学习</a></dd>
+						<dd><a href="https://cstimer.net" target="_blank">魔方计时器</a></dd>
+						<dd><a href="https://pixabay.com/zh/" target="_blank">pixabay</a></dd>
+					</dl>
+				</li>
+			</ul>
+			<ul class="navRight">
+				<li><a href="../login/login.html"><span id="username">登录</span></a></li>
+				<li class="right"><a href="../login/sign-in.html">注册</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<div class="banner-max-box">
+				<div class="banner-box-header">
+					<ul class="banner-box-header-sub">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>VsCode</li>
+						<li>Chrome</li>
+						<li>git</li>
+						<li>vue</li>
+						<li>Node.js</li>
+						<li>React</li>
+						<li>小程序</li>
+						<li>数据结构</li>
+						<li>算法</li>
+						<li>网络</li>
+						<li>TCP/IP</li>
+					</ul>
+				</div>
+				<div class="banner-box-video">
+					<div class="look">
+						<ul class="banner-box-video-list">
+							<li>
+								<a href="https://www.bilibili.com/video/BV14J4114768" target="_blank" class="cover">
+									<img src="../img/cover/HTML_CSS3.webp">
+									<span>3371.15</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV14J4114768" target="_blank"
+									class="video-name">黑马程序员pink老师前端入门教程，零基础必看</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1Sy4y1C7ha" target="_blank" class="cover">
+									<img src="../img/cover/JavaScript.webp" alt="">
+									<span>2548:27</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1Sy4y1C7ha" target="_blank"
+									class="video-name">JavaScript基础语法-dom-bom-js-es6新语法-jQuery-数据可视化</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1Dp4y1x7TJ" target="_blank" class="cover">
+									<img src="../img/cover/vsocde.webp" alt="">
+									<span>69:18</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1Dp4y1x7TJ" target="_blank"
+									class="video-name">前端程序员必备利器：2小时吃透VScode编辑器</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1i54y1b7xR" target="_blank" class="cover">
+									<img src="../img/cover/chrome.webp" alt="">
+									<span class="data">03:46</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1i54y1b7xR" target="_blank"
+									class="video-name">【官方双语】为什么大家都在用Chrome？ #电子速谈</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1fK4y1b7XL" target="_blank" class="cover">
+									<img src="../img/cover/git.webp" alt="">
+									<span class="data">160:03</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1fK4y1b7XL" target="_blank"
+									class="video-name">2020黑马Git教程（2小时从入门到精通）【已完结】</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1bs411E7pD" target="_blank" class="cover">
+									<img src="../img/cover/Node-js.webp" alt="">
+									<span class="data">403:53</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1bs411E7pD" target="_blank"
+									class="video-name">【尚硅谷】最经典Node.JS全套完整版教程(快速入门nodejs)</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV12J411m7MG" target="_blank" class="cover">
+									<img src="../img/cover/vue.webp" alt="">
+									<span class="data">223:33</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV12J411m7MG" target="_blank"
+									class="video-name">黑马程序员前端基础教程-4个小时带你快速入门vue</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1gh411U7JD" target="_blank" class="cover">
+									<img src="../img/cover/React.webp" alt="">
+									<span class="data">758:43</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1gh411U7JD" target="_blank"
+									class="video-name">黑马程序员前端React精品教程， React从零基础入门到原理详解</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1nE41117BQ" target="_blank" class="cover">
+									<img src="../img/cover/wechat-app.webp" alt="">
+									<span class="data">1131:10</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1nE41117BQ" target="_blank"
+									class="video-name">黑马程序员Web前端教程_零基础玩转微信小程序</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1nE41117BQ" target="_blank" class="cover">
+									<img src="../img/cover/Data-structures-and-algorithms.webp" alt="">
+									<span class="data">3053:37</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1nE41117BQ" target="_blank"
+									class="video-name">尚硅谷Java数据结构与java算法（Java数据结构与算法）</a>
+							</li>
+							<li>
+								<a href="https://www.bilibili.com/video/BV1qp4y1b7im" target="_blank" class="cover">
+									<img src="../img/cover/Network.webp" alt="">
+									<span class="data">1131:10</span>
+								</a>
+								<a href="https://www.bilibili.com/video/BV1qp4y1b7im" target="_blank"
+									class="video-name">【TCP/IP网络协议必备教程】太厉害了!终于有人把(三次握手四次</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner-box-list">
+					<ul>
+						<li>这些都是我找的前端的知识</li>
+						<li>有浅层的三件套，有深层的框架</li>
+						<li>甚至有网络协议和数据结构</li>
+						<li>因为时间的关系</li>
+						<li>没法搜集更多的好的教程放上来</li>
+						<li>by:XiaoKai</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="Fcontent">
+				<div class="gitee">
+					<a href="https://gitee.com/xiaokai54" target="_blank">Gitee</a>
+				</div>
+				<div class="github">
+					<a href="https://github.com/xiaokai54" target="_blank">Github</a>
+				</div>
+				<div class="tomail">
+					<a href="mailto:morningkai@outlook.com">联系我</a>
+				</div>
+				<div class="about">
+					<a href="../about.html">关于我</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.querySelector('.banner').style.height = document.documentElement.clientHeight - 100 + 'px';
+		console.log(sessionStorage.getItem('Fnickname'));
+		if (sessionStorage.getItem('Fnickname').length != 0) {
+			document.querySelector('.right').style.display = 'none';
+			document.getElementById('username').innerHTML = sessionStorage.getItem('Fnickname');
+		}
+	</script>
+</body>
+
+</html>
