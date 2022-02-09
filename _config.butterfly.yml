@@ -658,7 +658,7 @@ aside:
       link: https://www.bilibili.com/movie/
   card_announcement:
     enable: false
-    content: 准备迁移至Coding…………
+    content: 无
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

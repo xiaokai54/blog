@@ -986,5 +986,5 @@ AR7 和 AR8 与CE2 通过 ospf 进程 100 进行通信，宣告在 Area 0 中
 
 ---
 
-配置下载连接：[企业网省赛决赛拓扑（ensp）](https://cdn.jsdelivr.net/gh/xiaokai54/xiaokai54.github.io/download/%E4%BC%81%E4%B8%9A%E7%BD%91%E7%9C%81%E8%B5%9B%E5%86%B3%E8%B5%9B.topo)
+配置下载连接：[企业网省赛决赛拓扑（ensp）](/downloads/企业网省赛决赛.topo)
 
