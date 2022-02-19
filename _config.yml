@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: xiaokai blog
-subtitle: 'This is xiaokai blog'
-description: 'You can not learn anything here'
+title: xkblog
+subtitle: ''
+description: '小凯博客'
 keywords: 
 author: xiaokai
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://xkblog.vercel.app/
+url: https://blog.xkaipro.com
 #permalink: :type/:title/
 permalink: p/:hash/
 permalink_defaults:
